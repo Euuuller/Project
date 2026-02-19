@@ -1,15 +1,19 @@
 <!DOCTYPE html>
 <html lang="pt-BR" data-theme="dark">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Euller Duarte | Data Analyst</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
   <link rel="stylesheet" href="Assets/css/main.css" />
+  <link rel="icon" type="image/svg+xml" href="Assets/img/favicon.svg" />
 </head>
+
 <body>
   <div class="bg-fixed">
     <canvas id="mathCanvas"></canvas>
@@ -17,7 +21,10 @@
   </div>
 
   <nav class="navbar" id="navbar">
-    <div class="nav-logo">ED</div>
+    <div class="nav-logo">
+      <span class="logo-terminal">&gt;_</span>
+      Euller <span class="logo-last">Duarte</span>
+    </div>
     <ul class="nav-links">
       <li><a href="#inicio">Início</a></li>
       <li><a href="#sobre">Sobre</a></li>
@@ -35,12 +42,15 @@
         CV
       </a>
       <a href="https://github.com/euuuller" target="_blank" class="github-link" aria-label="GitHub">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-          <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22" />
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+          stroke-linejoin="round">
+          <path
+            d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22" />
         </svg>
       </a>
       <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
-        <svg id="iconSun" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <svg id="iconSun" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none"
+          stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
           <circle cx="12" cy="12" r="5" />
           <line x1="12" y1="1" x2="12" y2="3" />
           <line x1="12" y1="21" x2="12" y2="23" />
@@ -51,7 +61,8 @@
           <line x1="4.22" y1="19.78" x2="5.64" y2="18.36" />
           <line x1="18.36" y1="5.64" x2="19.78" y2="4.22" />
         </svg>
-        <svg id="iconMoon" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display:none">
+        <svg id="iconMoon" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none"
+          stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display:none">
           <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" />
         </svg>
       </button>
@@ -74,14 +85,16 @@
       <div class="available-badge"><span class="badge-dot"></span>Disponível para novos projetos</div>
       <h1 class="hero-title">Olá, eu sou<br />Euller dos Santos Rodrigues Duarte</h1>
       <div class="hero-role"><span id="typedText" class="typed-text"></span><span class="cursor">|</span></div>
-      <p class="hero-subtitle">Olá, seja muito bem vindo ao meu portfólio de projetos</p>
+      <p class="hero-subtitle">Olá, seja muito bem vindo ao meu portfólio de projetos!<br />Fique a vontade para
+        explorar os projetos e entrar em contato!</p>
       <div class="hero-buttons">
         <a href="#projetos" class="btn-primary">Ver Projetos <span class="arrow">→</span></a>
         <a href="#contato" class="btn-outline">Entrar em Contato</a>
       </div>
     </div>
     <div class="scroll-indicator" id="scrollDown">
-      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
         <polyline points="6 9 12 15 18 9" />
       </svg>
     </div>
@@ -91,16 +104,8 @@
     <h2 class="section-heading">Sobre <span class="hl">Mim</span></h2>
     <div class="sobre-grid">
       <div class="photo-col">
-        <div class="ring-wrap reveal">
-          <div class="photo-circle">
-            <div class="photo-ph">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1">
-                <circle cx="12" cy="8" r="4" />
-                <path d="M4 20c0-4 3.6-7 8-7s8 3 8 7" />
-              </svg>
-              <span>Sua Foto Aqui</span>
-            </div>
-          </div>
+        <div class="photo-circle reveal">
+          <img src="Assets/img/profile.jpeg" alt="Euller Duarte" class="profile-photo">
         </div>
       </div>
       <div class="content-col">
@@ -158,7 +163,8 @@
           </a>
           <a href="https://github.com/" target="_blank" class="btn-gh">
             <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-              <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22" />
+              <path
+                d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22" />
             </svg>
             Ver GitHub
           </a>
@@ -174,137 +180,230 @@
     </div>
     <div class="skills-marquee-container">
       <div class="marquee-track scroll-left">
-        <div class="skill-card"><i class="devicon-python-plain colored"></i>
+        <div class="skill-card">
+          <div class="skill-card-icon"><img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg" alt="Python">
+          </div>
           <div class="skill-name">Python</div>
           <div class="skill-desc">Automação, Data Science e ML</div>
         </div>
-        <div class="skill-card"><i class="devicon-azuresqldatabase-plain colored"></i>
+        <div class="skill-card">
+          <div class="skill-card-icon"><img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/azuresqldatabase/azuresqldatabase-original.svg"
+              alt="SQL"></div>
           <div class="skill-name">SQL</div>
           <div class="skill-desc">Consultas complexas e otimização</div>
         </div>
-        <div class="skill-card"><i class="devicon-r-plain colored"></i>
+        <div class="skill-card">
+          <div class="skill-card-icon"><img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/r/r-original.svg" alt="R"></div>
           <div class="skill-name">R</div>
           <div class="skill-desc">Análise estatística e visualização</div>
         </div>
-        <div class="skill-card"><i class="devicon-javascript-plain colored"></i>
+        <div class="skill-card">
+          <div class="skill-card-icon"><img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg"
+              alt="JavaScript"></div>
           <div class="skill-name">JavaScript</div>
           <div class="skill-desc">Dashboards interativos</div>
         </div>
-        <div class="skill-card"><i class="devicon-postgresql-plain colored"></i>
+        <div class="skill-card">
+          <div class="skill-card-icon"><img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original.svg"
+              alt="PostgreSQL"></div>
           <div class="skill-name">PostgreSQL</div>
           <div class="skill-desc">Banco de dados relacional</div>
         </div>
-        <div class="skill-card"><i class="devicon-mongodb-plain colored"></i>
+        <div class="skill-card">
+          <div class="skill-card-icon"><img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-original.svg"
+              alt="MongoDB"></div>
           <div class="skill-name">MongoDB</div>
           <div class="skill-desc">Banco NoSQL para big data</div>
         </div>
-        <div class="skill-card"><i class="devicon-sqlite-plain colored"></i>
+        <div class="skill-card">
+          <div class="skill-card-icon"><img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/sqlite/sqlite-original.svg" alt="SQLite">
+          </div>
           <div class="skill-name">SQLite</div>
           <div class="skill-desc">Banco leve e embutido</div>
         </div>
-        <div class="skill-card"><i class="devicon-python-plain colored"></i>
+        <!-- Duplicates for marquee -->
+        <div class="skill-card">
+          <div class="skill-card-icon"><img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg" alt="Python">
+          </div>
           <div class="skill-name">Python</div>
           <div class="skill-desc">Automação, Data Science e ML</div>
         </div>
-        <div class="skill-card"><i class="devicon-azuresqldatabase-plain colored"></i>
+        <div class="skill-card">
+          <div class="skill-card-icon"><img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/azuresqldatabase/azuresqldatabase-original.svg"
+              alt="SQL"></div>
           <div class="skill-name">SQL</div>
           <div class="skill-desc">Consultas complexas e otimização</div>
         </div>
-        <div class="skill-card"><i class="devicon-r-plain colored"></i>
+        <div class="skill-card">
+          <div class="skill-card-icon"><img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/r/r-original.svg" alt="R"></div>
           <div class="skill-name">R</div>
           <div class="skill-desc">Análise estatística e visualização</div>
         </div>
-        <div class="skill-card"><i class="devicon-javascript-plain colored"></i>
+        <div class="skill-card">
+          <div class="skill-card-icon"><img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg"
+              alt="JavaScript"></div>
           <div class="skill-name">JavaScript</div>
           <div class="skill-desc">Dashboards interativos</div>
         </div>
-        <div class="skill-card"><i class="devicon-postgresql-plain colored"></i>
+        <div class="skill-card">
+          <div class="skill-card-icon"><img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original.svg"
+              alt="PostgreSQL"></div>
           <div class="skill-name">PostgreSQL</div>
           <div class="skill-desc">Banco de dados relacional</div>
         </div>
-        <div class="skill-card"><i class="devicon-mongodb-plain colored"></i>
+        <div class="skill-card">
+          <div class="skill-card-icon"><img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-original.svg"
+              alt="MongoDB"></div>
           <div class="skill-name">MongoDB</div>
           <div class="skill-desc">Banco NoSQL para big data</div>
         </div>
-        <div class="skill-card"><i class="devicon-sqlite-plain colored"></i>
+        <div class="skill-card">
+          <div class="skill-card-icon"><img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/sqlite/sqlite-original.svg" alt="SQLite">
+          </div>
           <div class="skill-name">SQLite</div>
           <div class="skill-desc">Banco leve e embutido</div>
         </div>
       </div>
       <div class="marquee-track scroll-right">
-        <div class="skill-card"><i class="devicon-pandas-plain colored"></i>
+        <div class="skill-card">
+          <div class="skill-card-icon"><img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/pandas/pandas-original.svg" alt="Pandas">
+          </div>
           <div class="skill-name">Pandas</div>
           <div class="skill-desc">Manipulação e análise de dados</div>
         </div>
-        <div class="skill-card"><i class="devicon-numpy-plain colored"></i>
+        <div class="skill-card">
+          <div class="skill-card-icon"><img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/numpy/numpy-original.svg" alt="NumPy">
+          </div>
           <div class="skill-name">NumPy</div>
           <div class="skill-desc">Computação numérica</div>
         </div>
-        <div class="skill-card"><i class="devicon-tensorflow-original colored"></i>
+        <div class="skill-card">
+          <div class="skill-card-icon"><img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tensorflow/tensorflow-original.svg"
+              alt="TensorFlow"></div>
           <div class="skill-name">TensorFlow</div>
           <div class="skill-desc">Deep learning</div>
         </div>
-        <div class="skill-card"><i class="devicon-scikitlearn-plain colored"></i>
+        <div class="skill-card">
+          <div class="skill-card-icon"><img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/scikitlearn/scikitlearn-original.svg"
+              alt="Scikit-learn"></div>
           <div class="skill-name">Scikit-learn</div>
           <div class="skill-desc">Machine learning clássico</div>
         </div>
-        <div class="skill-card"><i class="devicon-git-plain colored"></i>
+        <div class="skill-card">
+          <div class="skill-card-icon"><img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg" alt="Git"></div>
           <div class="skill-name">Git</div>
           <div class="skill-desc">Controle de versão</div>
         </div>
-        <div class="skill-card"><i class="devicon-docker-plain colored"></i>
+        <div class="skill-card">
+          <div class="skill-card-icon"><img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/docker/docker-original.svg" alt="Docker">
+          </div>
           <div class="skill-name">Docker</div>
           <div class="skill-desc">Containerização</div>
         </div>
-        <div class="skill-card"><i class="devicon-html5-plain colored"></i>
+        <div class="skill-card">
+          <div class="skill-card-icon"><img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" alt="HTML5">
+          </div>
           <div class="skill-name">HTML5</div>
           <div class="skill-desc">Estruturação semântica</div>
         </div>
-        <div class="skill-card"><i class="devicon-css3-plain colored"></i>
+        <div class="skill-card">
+          <div class="skill-card-icon"><img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg" alt="CSS3"></div>
           <div class="skill-name">CSS3</div>
           <div class="skill-desc">Estilização responsiva</div>
         </div>
-        <div class="skill-card"><i class="devicon-tableau-plain colored"></i>
+        <div class="skill-card">
+          <div class="skill-card-icon"><img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tableau/tableau-plain.svg" alt="Tableau">
+          </div>
           <div class="skill-name">Tableau</div>
           <div class="skill-desc">Visualização de dados</div>
         </div>
-        <div class="skill-card"><i class="devicon-pandas-plain colored"></i>
+        <!-- Duplicates for marquee -->
+        <div class="skill-card">
+          <div class="skill-card-icon"><img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/pandas/pandas-original.svg" alt="Pandas">
+          </div>
           <div class="skill-name">Pandas</div>
           <div class="skill-desc">Manipulação e análise de dados</div>
         </div>
-        <div class="skill-card"><i class="devicon-numpy-plain colored"></i>
+        <div class="skill-card">
+          <div class="skill-card-icon"><img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/numpy/numpy-original.svg" alt="NumPy">
+          </div>
           <div class="skill-name">NumPy</div>
           <div class="skill-desc">Computação numérica</div>
         </div>
-        <div class="skill-card"><i class="devicon-tensorflow-original colored"></i>
+        <div class="skill-card">
+          <div class="skill-card-icon"><img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tensorflow/tensorflow-original.svg"
+              alt="TensorFlow"></div>
           <div class="skill-name">TensorFlow</div>
           <div class="skill-desc">Deep learning</div>
         </div>
-        <div class="skill-card"><i class="devicon-scikitlearn-plain colored"></i>
+        <div class="skill-card">
+          <div class="skill-card-icon"><img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/scikitlearn/scikitlearn-original.svg"
+              alt="Scikit-learn"></div>
           <div class="skill-name">Scikit-learn</div>
           <div class="skill-desc">Machine learning clássico</div>
         </div>
-        <div class="skill-card"><i class="devicon-git-plain colored"></i>
+        <div class="skill-card">
+          <div class="skill-card-icon"><img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg" alt="Git"></div>
           <div class="skill-name">Git</div>
           <div class="skill-desc">Controle de versão</div>
         </div>
-        <div class="skill-card"><i class="devicon-docker-plain colored"></i>
+        <div class="skill-card">
+          <div class="skill-card-icon"><img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/docker/docker-original.svg" alt="Docker">
+          </div>
           <div class="skill-name">Docker</div>
           <div class="skill-desc">Containerização</div>
         </div>
-        <div class="skill-card"><i class="devicon-html5-plain colored"></i>
+        <div class="skill-card">
+          <div class="skill-card-icon"><img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" alt="HTML5">
+          </div>
           <div class="skill-name">HTML5</div>
           <div class="skill-desc">Estruturação semântica</div>
         </div>
-        <div class="skill-card"><i class="devicon-css3-plain colored"></i>
+        <div class="skill-card">
+          <div class="skill-card-icon"><img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg" alt="CSS3"></div>
           <div class="skill-name">CSS3</div>
           <div class="skill-desc">Estilização responsiva</div>
         </div>
-        <div class="skill-card"><i class="devicon-tableau-plain colored"></i>
+        <div class="skill-card">
+          <div class="skill-card-icon"><img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tableau/tableau-plain.svg" alt="Tableau">
+          </div>
           <div class="skill-name">Tableau</div>
           <div class="skill-desc">Visualização de dados</div>
         </div>
       </div>
+    </div>
     </div>
   </section>
 
@@ -336,12 +435,14 @@
       <div class="projects-track" id="projectsTrack">
         <div class="project-card" data-index="0">
           <div class="card-img">
-            <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=700&q=80&auto=format&fit=crop" alt="Segmentação de Clientes" loading="lazy" />
+            <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=700&q=80&auto=format&fit=crop"
+              alt="Segmentação de Clientes" loading="lazy" />
             <span class="card-category-badge">Analytics</span>
           </div>
           <div class="card-body">
             <h3 class="project-title">Segmentação de Clientes (RFM)</h3>
-            <p class="project-description">Estratégia de marketing baseada no comportamento de compra utilizando clustering e análise de dados.</p>
+            <p class="project-description">Estratégia de marketing baseada no comportamento de compra utilizando
+              clustering e análise de dados.</p>
             <div class="project-tags">
               <span class="tech-tag tag-python">Python</span>
               <span class="tech-tag tag-sql">SQL</span>
@@ -369,7 +470,8 @@
               <div class="project-links">
                 <a href="#" class="project-link link-gh">
                   <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                    <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22" />
+                    <path
+                      d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22" />
                   </svg>
                   GitHub
                 </a>
@@ -387,12 +489,14 @@
         </div>
         <div class="project-card" data-index="1">
           <div class="card-img">
-            <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=700&q=80&auto=format&fit=crop" alt="Dashboard de Vendas" loading="lazy" />
+            <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=700&q=80&auto=format&fit=crop"
+              alt="Dashboard de Vendas" loading="lazy" />
             <span class="card-category-badge">Dashboards</span>
           </div>
           <div class="card-body">
             <h3 class="project-title">Dashboard de Vendas</h3>
-            <p class="project-description">Monitoramento de KPIs comerciais em tempo real com visualização interativa e storytelling de dados.</p>
+            <p class="project-description">Monitoramento de KPIs comerciais em tempo real com visualização interativa e
+              storytelling de dados.</p>
             <div class="project-tags">
               <span class="tech-tag tag-powerbi">Power BI</span>
               <span class="tech-tag tag-dax">DAX</span>
@@ -413,7 +517,8 @@
               <div class="project-links">
                 <a href="#" class="project-link link-gh">
                   <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                    <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22" />
+                    <path
+                      d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22" />
                   </svg>
                   GitHub
                 </a>
@@ -431,12 +536,14 @@
         </div>
         <div class="project-card" data-index="2">
           <div class="card-img">
-            <img src="https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=700&q=80&auto=format&fit=crop" alt="Detecção de Fraudes" loading="lazy" />
+            <img src="https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=700&q=80&auto=format&fit=crop"
+              alt="Detecção de Fraudes" loading="lazy" />
             <span class="card-category-badge">Machine Learning</span>
           </div>
           <div class="card-body">
             <h3 class="project-title">Detecção de Fraudes (ML)</h3>
-            <p class="project-description">Modelo preditivo de Machine Learning para identificação de transações bancárias fraudulentas.</p>
+            <p class="project-description">Modelo preditivo de Machine Learning para identificação de transações
+              bancárias fraudulentas.</p>
             <div class="project-tags">
               <span class="tech-tag tag-python">Python</span>
               <span class="tech-tag tag-skl">Scikit-learn</span>
@@ -463,7 +570,8 @@
               <div class="project-links">
                 <a href="#" class="project-link link-gh">
                   <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                    <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22" />
+                    <path
+                      d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22" />
                   </svg>
                   GitHub
                 </a>
@@ -520,7 +628,8 @@
           <div class="contato-item" data-type="github">
             <div class="contato-icon">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22" />
+                <path
+                  d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22" />
               </svg>
             </div>
             <div class="contato-content">
@@ -553,11 +662,13 @@
           </div>
           <div class="form-group">
             <label class="form-label" for="assunto">Assunto</label>
-            <input type="text" id="assunto" name="assunto" class="form-input" placeholder="Sobre o projeto..." required />
+            <input type="text" id="assunto" name="assunto" class="form-input" placeholder="Sobre o projeto..."
+              required />
           </div>
           <div class="form-group">
             <label class="form-label" for="mensagem">Mensagem</label>
-            <textarea id="mensagem" name="mensagem" class="form-textarea" placeholder="Como posso ajudar?" required></textarea>
+            <textarea id="mensagem" name="mensagem" class="form-textarea" placeholder="Como posso ajudar?"
+              required></textarea>
           </div>
           <button type="submit" class="form-submit">
             Enviar Mensagem
@@ -577,13 +688,16 @@
       <div class="footer-made-with">
         Feito com muito amor
         <span class="footer-icon-heart">
-          <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-            <path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z" />
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round">
+            <path
+              d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z" />
           </svg>
         </span>
         e café
         <span class="footer-icon-coffee">
-          <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round">
             <path d="M17 8h1a4 4 0 1 1 0 8h-1" />
             <path d="M3 8h14v9a4 4 0 0 1-4 4H7a4 4 0 0 1-4-4Z" />
             <line x1="6" x2="6" y1="2" y2="4" />
@@ -619,4 +733,5 @@
 
   <script type="module" src="Assets/js/app.js"></script>
 </body>
+
 </html>
