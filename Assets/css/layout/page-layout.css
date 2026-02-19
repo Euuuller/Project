@@ -1,0 +1,140 @@
+/* ========== PAGE LAYOUT ========== */
+.page-wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  position: relative;
+}
+
+.main-content {
+  flex: 1;
+  padding-top: 64px; /* Account for fixed navbar */
+}
+
+.section {
+  padding: 7rem 0;
+  position: relative;
+}
+
+.section--full-height {
+  min-height: 100vh;
+}
+
+.section--transparent {
+  background: transparent;
+}
+
+.section--padding-top {
+  padding-top: 7rem;
+}
+
+.section--padding-bottom {
+  padding-bottom: 7rem;
+}
+
+.content-wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+  width: 100%;
+}
+
+/* Layout containers */
+.container--wide {
+  max-width: 1400px;
+}
+
+.container--narrow {
+  max-width: 800px;
+}
+
+/* Page specific layouts */
+.home-layout {
+  display: flex;
+  flex-direction: column;
+}
+
+.about-layout {
+  display: grid;
+  grid-template-columns: 360px 1fr;
+  gap: 5rem;
+  align-items: center;
+}
+
+.skills-layout {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.projects-layout {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact-layout {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  align-items: start;
+}
+
+/* Responsive adjustments for layouts */
+@media (max-width: 900px) {
+  .about-layout {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+
+  .contact-layout {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+}
+
+/* Card layouts */
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.card-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+/* Flex alignment helpers */
+.align-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.align-center--vertical {
+  display: flex;
+  align-items: center;
+}
+
+.align-center--horizontal {
+  display: flex;
+  justify-content: center;
+}
+
+/* Positioning utilities */
+.relative { position: relative; }
+.absolute { position: absolute; }
+.fixed { position: fixed; }
+.sticky { position: sticky; }
+
+.top-0 { top: 0; }
+.bottom-0 { bottom: 0; }
+.left-0 { left: 0; }
+.right-0 { right: 0; }
+
+.full-width { width: 100%; }
+.full-height { height: 100%; }
+.full-screen { height: 100vh; }

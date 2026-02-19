@@ -1,0 +1,31 @@
+/* Main Stylesheet - Imports all modular CSS files */
+
+/* Generic styles */
+@import url('generic/buttons.css');
+@import url('generic/cards.css');
+@import url('generic/forms.css');
+
+/* Base styles */
+@import url('base/reset.css');
+@import url('base/variables.css');
+
+/* Layout styles */
+@import url('layout/grid.css');
+@import url('layout/page-layout.css');
+@import url('layout/background.css');
+
+/* Component styles */
+@import url('components/navbar.css');
+@import url('components/modal.css');
+@import url('components/section-headings.css');
+
+/* Section styles */
+@import url('sections/hero.css');
+@import url('sections/sobre.css');
+@import url('sections/skills.css');
+@import url('sections/projetos.css');
+@import url('sections/contato.css');
+@import url('sections/footer.css');
+
+/* Utility styles */
+@import url('utils/responsive.css');

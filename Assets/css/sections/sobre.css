@@ -1,0 +1,233 @@
+/* ========== SOBRE ========== */
+.sobre {
+  min-height: 100vh;
+  padding: 7rem 1.5rem;
+  background: transparent;
+}
+
+.sobre-grid {
+  max-width: 1060px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 360px 1fr;
+  gap: 5rem;
+  align-items: center;
+}
+
+.photo-col {
+  display: flex;
+  justify-content: center;
+}
+
+.ring-wrap {
+  position: relative;
+  width: 280px;
+  height: 280px;
+}
+
+.ring-wrap::before {
+  content: '';
+  position: absolute;
+  inset: -5px;
+  border-radius: 50%;
+  background: conic-gradient(var(--accent) 0deg, var(--purple) 120deg, transparent 180deg, var(--accent) 360deg);
+  animation: spinRing 6s linear infinite;
+  z-index: 0;
+}
+
+.ring-wrap::after {
+  content: '';
+  position: absolute;
+  inset: -22px;
+  border-radius: 50%;
+  background: radial-gradient(circle, var(--glow-b) 0%, var(--glow-p) 45%, transparent 72%);
+  z-index: 0;
+  animation: glowPulse 3s ease-in-out infinite;
+}
+
+@keyframes spinRing {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes glowPulse {
+  0%,
+  100% {
+    opacity: 0.7;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.06);
+  }
+}
+
+.photo-circle {
+  position: relative;
+  z-index: 1;
+  width: 280px;
+  height: 280px;
+  border-radius: 50%;
+  overflow: hidden;
+  background: linear-gradient(135deg, rgba(59, 130, 246, 0.1), rgba(168, 85, 247, 0.1));
+  border: 3px solid var(--border);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.photo-ph {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+.photo-ph svg {
+  opacity: 0.3;
+  width: 80px;
+  height: 80px;
+  stroke: currentColor;
+}
+
+.photo-ph span {
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  opacity: 0.55;
+}
+
+.stat-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.85rem;
+}
+
+.stat-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border-card);
+  border-radius: 14px;
+  padding: 1.1rem 0.9rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.55rem;
+  text-align: center;
+  backdrop-filter: blur(4px);
+  transition: border-color 0.25s, transform 0.25s, background 0.3s;
+}
+
+.stat-card:hover {
+  border-color: rgba(59, 130, 246, 0.38);
+  transform: translateY(-3px);
+}
+
+.stat-icon {
+  width: 38px;
+  height: 38px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255, 255, 255, 0.06);
+}
+
+.stat-icon svg {
+  width: 18px;
+  height: 18px;
+}
+
+.stat-label {
+  font-size: 0.79rem;
+  font-weight: 700;
+  color: var(--text);
+}
+
+.stat-value {
+  font-size: 0.69rem;
+  color: var(--text-muted);
+}
+
+.content-col {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.bio-text {
+  font-size: 0.965rem;
+  line-height: 1.78;
+  color: var(--text-soft);
+  text-align: center;
+}
+
+.bio-text strong {
+  color: var(--text);
+}
+
+.bio-text a {
+  color: var(--accent);
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.bio-text a.purple-link {
+  color: var(--purple);
+}
+
+.bio-text a:hover {
+  text-decoration: underline;
+}
+
+.sobre-btns {
+  display: flex;
+  gap: 0.85rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.btn-dl,
+.btn-gh {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.72rem 1.5rem;
+  border-radius: 8px;
+  font-size: 0.875rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: opacity 0.2s, transform 0.2s, background 0.3s;
+}
+
+.btn-dl {
+  background: var(--text);
+  color: var(--bg);
+}
+
+.btn-dl:hover {
+  opacity: 0.88;
+  transform: translateY(-2px);
+}
+
+.btn-gh {
+  background: rgba(255, 255, 255, 0.06);
+  color: var(--text);
+  border: 1px solid var(--border);
+}
+
+.btn-gh:hover {
+  background: rgba(255, 255, 255, 0.13);
+  transform: translateY(-2px);
+}
+
+[data-theme="light"] .btn-gh {
+  background: rgba(0, 0, 0, 0.05);
+  border-color: rgba(0, 0, 0, 0.12);
+}
+
+[data-theme="light"] .btn-gh:hover {
+  background: rgba(0, 0, 0, 0.09);
+}

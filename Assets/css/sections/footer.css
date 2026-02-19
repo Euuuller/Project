@@ -1,0 +1,71 @@
+/* ========== FOOTER ========== */
+.footer {
+  padding: 3rem 1.5rem;
+  background: transparent;
+  border-top: 1px solid var(--border);
+  text-align: center;
+}
+
+.footer-content {
+  max-width: 600px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.footer-copyright {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  letter-spacing: 0.02em;
+}
+
+.footer-made-with {
+  font-size: 0.9rem;
+  color: var(--text-soft);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.3rem;
+  flex-wrap: wrap;
+}
+
+.footer-icon-heart,
+.footer-icon-coffee {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  animation: heartBeat 1.5s ease infinite;
+}
+
+.footer-icon-heart svg {
+  display: block;
+  width: 1.2em;
+  height: 1.2em;
+  stroke: #ef4444;
+  fill: none;
+}
+
+.footer-icon-coffee svg {
+  display: block;
+  width: 1.2em;
+  height: 1.2em;
+  stroke: #f97316;
+  fill: none;
+}
+
+@keyframes heartBeat {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  25% {
+    transform: scale(1.1);
+  }
+  40% {
+    transform: scale(1);
+  }
+  60% {
+    transform: scale(1.08);
+  }
+}

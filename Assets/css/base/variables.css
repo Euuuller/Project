@@ -1,0 +1,59 @@
+:root {
+  --bg: #0a0a0f;
+  --bg-alt: #0a0a0f;
+  --bg-card: #000000;
+  --bg-nav: rgba(10, 10, 15, 0.85);
+  --text: #ffffff;
+  --text-muted: #a1a1aa;
+  --text-soft: #d4d4d8;
+  --accent: #3b82f6;
+  --accent-h: #2563eb;
+  --purple: #a855f7;
+  --border: rgba(255, 255, 255, 0.08);
+  --border-card: rgba(255, 255, 255, 0.12);
+  --badge-bg: rgba(59, 130, 246, 0.12);
+  --badge-bdr: rgba(59, 130, 246, 0.3);
+  --badge-txt: #93c5fd;
+  --glow-b: rgba(59, 130, 246, 0.45);
+  --glow-p: rgba(168, 85, 247, 0.35);
+  --desafio: #ef4444;
+  --solucao: #3b82f6;
+  --impacto: #10b981;
+  --email: #ea4335;
+  --linkedin: #0a66c2;
+  --github: #aaaaaa;
+  --medium: #00ab6c;
+  --contato-card-bg: #000000;
+  --contato-card-border: rgba(255, 255, 255, 0.12);
+  --btn-gh-bg: rgba(255, 255, 255, 0.08);
+  --btn-gh-border: rgba(255, 255, 255, 0.15);
+  --btn-gh-text: #d4d4d8;
+  --btn-demo-bg: #3b82f6;
+  --btn-demo-hover: #2563eb;
+}
+
+[data-theme="light"] {
+  --bg: #f5f5fa;
+  --bg-alt: #ebebf5;
+  --bg-card: rgba(0, 0, 0, 0.03);
+  --bg-nav: rgba(245, 245, 250, 0.92);
+  --text: #0a0a0f;
+  --text-muted: #52525b;
+  --text-soft: #3f3f46;
+  --accent: #2563eb;
+  --accent-h: #1d4ed8;
+  --purple: #9333ea;
+  --border: rgba(0, 0, 0, 0.08);
+  --border-card: rgba(0, 0, 0, 0.07);
+  --badge-bg: rgba(37, 99, 235, 0.08);
+  --badge-bdr: rgba(37, 99, 235, 0.25);
+  --badge-txt: #1d4ed8;
+  --glow-b: rgba(37, 99, 235, 0.2);
+  --glow-p: rgba(147, 51, 234, 0.15);
+  --github: #24292e;
+  --contato-card-bg: rgba(0, 0, 0, 0.05);
+  --contato-card-border: rgba(0, 0, 0, 0.1);
+  --btn-gh-bg: rgba(0, 0, 0, 0.05);
+  --btn-gh-border: rgba(0, 0, 0, 0.12);
+  --btn-gh-text: #3f3f46;
+}

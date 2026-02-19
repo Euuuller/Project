@@ -1,0 +1,232 @@
+/* ========== CONTATO ========== */
+.contato {
+  min-height: 100vh;
+  padding: 7rem 1.5rem;
+  background: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contato .container {
+  max-width: 1000px;
+  width: 100%;
+}
+
+.contato-header {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.contato-header p {
+  font-size: 1rem;
+  color: var(--text-muted);
+  line-height: 1.6;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.contato-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  align-items: start;
+}
+
+.contato-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.contato-item {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1.1rem 1.4rem;
+  background: var(--contato-card-bg);
+  border: 1px solid var(--contato-card-border);
+  border-radius: 16px;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  transition: transform 0.25s, border-color 0.25s, box-shadow 0.25s, background 0.3s;
+}
+
+.contato-item:hover {
+  transform: translateY(-3px);
+  border-color: rgba(255, 255, 255, 0.16);
+  box-shadow: 0 8px 28px rgba(0, 0, 0, 0.38);
+}
+
+.contato-icon {
+  width: 42px;
+  height: 42px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  transition: background 0.25s;
+}
+
+.contato-item[data-type="email"] .contato-icon {
+  background: rgba(234, 67, 53, 0.18);
+}
+
+.contato-item[data-type="linkedin"] .contato-icon {
+  background: rgba(10, 102, 194, 0.20);
+}
+
+.contato-item[data-type="github"] .contato-icon {
+  background: rgba(160, 160, 160, 0.14);
+}
+
+.contato-item[data-type="medium"] .contato-icon {
+  background: rgba(0, 171, 108, 0.18);
+}
+
+.contato-icon svg {
+  width: 20px;
+  height: 20px;
+}
+
+.contato-item[data-type="email"] .contato-icon svg {
+  stroke: #ea4335;
+}
+
+.contato-item[data-type="linkedin"] .contato-icon svg {
+  stroke: #4a9eff;
+}
+
+.contato-item[data-type="github"] .contato-icon svg {
+  stroke: #aaaaaa;
+}
+
+.contato-item[data-type="medium"] .contato-icon svg {
+  stroke: #00ab6c;
+}
+
+[data-theme="light"] .contato-item {
+  background: rgba(255, 255, 255, 0.75);
+  border-color: rgba(0, 0, 0, 0.09);
+}
+
+[data-theme="light"] .contato-item:hover {
+  box-shadow: 0 8px 28px rgba(0, 0, 0, 0.12);
+}
+
+.contato-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.contato-label {
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--text-muted);
+  margin-bottom: 0.2rem;
+}
+
+.contato-value {
+  font-size: 0.88rem;
+  font-weight: 600;
+  color: var(--text);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.contato-value:hover {
+  color: var(--accent);
+}
+
+.contato-form {
+  background: var(--contato-card-bg);
+  border: 1px solid var(--contato-card-border);
+  border-radius: 24px;
+  padding: 2rem;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+[data-theme="light"] .contato-form {
+  background: rgba(255, 255, 255, 0.75);
+  border-color: rgba(0, 0, 0, 0.09);
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.form-label {
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--text-muted);
+}
+
+.form-input,
+.form-textarea {
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid var(--border-card);
+  border-radius: 12px;
+  padding: 0.8rem 1.2rem;
+  font-family: 'Inter', sans-serif;
+  font-size: 0.9rem;
+  color: var(--text);
+  transition: border-color 0.2s, background 0.3s;
+}
+
+[data-theme="light"] .form-input,
+[data-theme="light"] .form-textarea {
+  background: rgba(0, 0, 0, 0.02);
+}
+
+.form-input:focus,
+.form-textarea:focus {
+  outline: none;
+  border-color: var(--accent);
+}
+
+.form-textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+.form-submit {
+  background: var(--accent);
+  color: #fff;
+  border: none;
+  border-radius: 12px;
+  padding: 1rem;
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  transition: background 0.2s, transform 0.2s;
+}
+
+.form-submit:hover {
+  background: var(--accent-h);
+  transform: translateY(-2px);
+}
+
+.form-submit svg {
+  width: 16px;
+  height: 16px;
+  stroke: currentColor;
+  transition: transform 0.2s;
+}
+
+.form-submit:hover svg {
+  transform: translateX(4px);
+}
